@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App flask</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex items-center justify-center h-screen flex-col">
+    <h1 class="w-full text-center text-green-900 text-4xl py-2 font-bold">Mi primera api con flask</h1>
+    <div class="w-full flex items-center justify-center">
+     <!--Manera de insertar imagen desde estatic-->
+    <img src="{{ url_for('static', filename='flaskImg.png') }}" alt="Mi imagen" class="w-72 h-72">
+</div>
+</body>
+</html>
